@@ -1,5 +1,5 @@
 /* eslint-disable */
-
+const fs = require('fs');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
@@ -29,6 +29,22 @@ const buildpath = {
 };
 
 const stylesheets = ['assets/sass/style-rtl.scss', 'assets/sass/style-ltr.scss'];
+
+const getHtmlFiles = (dir, htmlFiles) =>{
+  htmlFiles = htmlFiles || [];
+  const files = fs.readdirSync(dir);
+  files.forEach((f) =>{
+    if (fs.statSync(path.join(dir, f)).isDirectory()) {
+      getHtmlFiles(path.join(dir, f), htmlFiles);
+    } else if (f.endsWith('.html')) {
+      const originalFilePath = path.join(dir, f);
+      const newFilePath = (originalFilePath.split(path.sep).slice(1));
+      newFilePath.unshift('public');
+      htmlFiles.push([originalFilePath, newFilePath.join(path.sep)]);
+    }
+  });
+  return htmlFiles;
+};
 
 gulp.task('copy', ['copy:favicon', 'copy:images', 'copy:robots']);
 
@@ -165,19 +181,17 @@ gulp.task('sitemap', function () {
 
 
 gulp.task('handlebars', function () {
-  var options = {
+  const options = {
     batch: ['partials']
   };
 
-  var files = [
-    ['source/index.html', 'public/index.html']
-  ];
+  const files = getHtmlFiles('./src');
 
   return files.forEach(function (filePair) {
-    var src = filePair[0];
-    var dist = filePair[1];
-    var distDir = path.dirname(dist);
-    var distFileName = path.basename(dist);
+    const src = filePair[0];
+    const dist = filePair[1];
+    const distDir = path.dirname(dist);
+    const distFileName = path.basename(dist);
 
     return gulp.src(src)
       .pipe(handlebars({}, options))
