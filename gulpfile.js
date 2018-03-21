@@ -234,6 +234,13 @@ gulp.task('critical', ['handlebars','postcss:prod'], function (cb) {
   });
 });
 
+gulp.task('gh:pages', () => {
+  // copy built site to gh-pages folder
+  return gulp.src('public/**/*')
+    .pipe(gulp.dest('gh-pages'));
+})
+
 gulp.task('default', ['copy', 'handlebars', 'svgstore', 'webpack', 'postcss:dev', 'browserSync', 'watch']);
 gulp.task('prod', ['copy', 'critical', 'svgstore', 'webpack:prod', 'postcss:prod']);
+gulp.task('deploy', ['prod', 'gh:pages'])
 gulp.task('test', ['w3cjs', 'a11y']);
