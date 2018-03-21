@@ -150,7 +150,7 @@ gulp.task('svgstore', ['svgo'], function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch(['source/**/*.html', 'partials/**/*.html'], ['handlebars']);
+  gulp.watch(['src/**/*.html', 'partials/**/*.html'], ['handlebars']);
   gulp.watch(['assets/sass/**/*.scss'], ['postcss:dev']);
   gulp.watch(['assets/js/**/*.js'], ['webpack']);
   gulp.watch(['assets/icons/*.svg'], ['svgstore']);
