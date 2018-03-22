@@ -32,14 +32,9 @@
   }
 
   @media(max-width: 768px) {
-    .buttons{
-      flex-wrap: wrap;
-      overflow-x: scroll;
-    }
     .filters-btn {
-      flex: 0 0 auto;
-      // width: 90%;
-      // margin-bottom: 30px;
+      width: 90%;
+      margin-bottom: 30px;
     }
   }
 
