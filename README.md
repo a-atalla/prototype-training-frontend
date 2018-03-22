@@ -27,13 +27,13 @@ The boilerplate is an opinionated folder structure to help you kick-start your h
 
 The boilerplate includes three necessary tests for your code:
 
-* a HTML5 validator (`npm run w3js`),
+* a HTML5 validator (`npm run w3cjs`),
 * an accessibility reporter (`npm run a11y`),
 * and an eslint linter (airbnb) (`npm run lint`).
 
 ### Deploy
 
-1.  Run: `npm run deploy` to build 
+1.  Run: `npm run deploy` to build
 
 You only need to deploy the server code and the public folder.
 

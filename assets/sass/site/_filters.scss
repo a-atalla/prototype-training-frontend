@@ -25,10 +25,30 @@
   .selectors {
     display:flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #555;
+    margin-bottom: 25px;
+    .selector{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p{
+        margin: 0
+      }
+      svg{
+        margin: 0 10px;
+      }
+    }
   }
-
-  button {
-    background-color: #CCC;
+  .mail-notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+    a {
+      color: #555;
+    }
   }
 
   @media(max-width: 768px) {
@@ -36,6 +56,11 @@
       width: 90%;
       margin-bottom: 30px;
     }
+    .selector {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+
   }
 
 }
