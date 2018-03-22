@@ -7505,13 +7505,8 @@ footer {
   .filters button {
     background-color: #CCC; }
   @media (max-width: 768px) {
-    .filters .buttons {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      overflow-x: scroll; }
     .filters .filters-btn {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 auto;
-              flex: 0 0 auto; } }
+      width: 90%;
+      margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style-ltr.css.map */
