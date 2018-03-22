@@ -85,7 +85,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var sayHello = function sayHello() {
-  console.log('Hello JS');
+  $('#mngJobs').click(function () {
+    console.log('Managerial Jobs');
+  });
+  $('#devJobs').click(function () {
+    console.log('Development Jobs');
+  });
+  $('#allJobs').click(function () {
+    console.log('All Jobs');
+  });
 };
 
 exports.default = sayHello;
@@ -162,6 +170,8 @@ var _about2 = _interopRequireDefault(_about);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* global document */
+window.$ = _jquery2.default;
+window.jQuery = _jquery2.default;
 document.addEventListener('DOMContentLoaded', function () {
   var g = new _global2.default();
   g.init();

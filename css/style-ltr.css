@@ -7457,4 +7457,61 @@ footer {
       color: #FFF;
       background-color: #4DAF7C; }
 
+.filters {
+  widows: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .filters .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 30px; }
+    .filters .buttons .filters-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .filters .buttons .filters-btn:hover {
+        border-bottom: 1px solid #000;
+        cursor: pointer; }
+  .filters .selectors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .filters button {
+    background-color: #CCC; }
+  @media (max-width: 768px) {
+    .filters .buttons {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      overflow-x: scroll; }
+    .filters .filters-btn {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto; } }
+
 /*# sourceMappingURL=style-ltr.css.map */
