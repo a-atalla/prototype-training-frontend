@@ -7458,7 +7458,7 @@ footer {
       background-color: #4DAF7C; }
 
 .filters {
-  widows: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7508,5 +7508,9 @@ footer {
     .filters .filters-btn {
       width: 90%;
       margin-bottom: 30px; } }
+
+html,
+body {
+  font-family: 'Titillium Web', sans-serif; }
 
 /*# sourceMappingURL=style-ltr.css.map */
