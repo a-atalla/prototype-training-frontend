@@ -19,19 +19,18 @@
     .job-title-box{
       display: flex;
       flex-wrap: wrap;
-      h6 {
-        margin: 0;
-        width: 75%;
-        height: 25px;
-        small {
-          color: #AAA;
-          font-weight: 100
-        }
-      }
       svg {
         width: 25%;
       }
-
+      h6 {
+        margin: 0;
+        width: 100%;
+        height: 25px;
+      }
+      small {
+        color: #AAA;
+        font-weight: 100
+      }
     }
 
     .job-category {
