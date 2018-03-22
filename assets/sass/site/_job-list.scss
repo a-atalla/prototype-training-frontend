@@ -1,0 +1,18 @@
+.job-list {
+  // height: 100%;
+  widows: 100%;
+  background-color: #EEE5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+
+  .btn-load-more {
+    width: 75%;
+    background-color: #EEE2;
+    border:1px solid #000;
+    border-radius: 10px;
+    padding:20px;
+  }
+}
