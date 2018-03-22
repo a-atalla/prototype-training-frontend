@@ -7396,11 +7396,9 @@ footer {
   .job-card .job-head .job-title-box {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    display: flex; }
     .job-card .job-head .job-title-box svg {
-      width: 25%; }
+      margin-right: 15px; }
     .job-card .job-head .job-title-box h6 {
       margin: 0;
       width: 100%;
