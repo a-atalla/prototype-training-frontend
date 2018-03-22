@@ -77,7 +77,10 @@
     }
   }
   @media(max-width: 768px) {
-    width: 100%;
+    width: 80%;
+  }
+  @media(min-width: 1200px) {
+    width: 30%;
   }
 
   &:hover{
