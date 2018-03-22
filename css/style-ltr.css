@@ -7399,15 +7399,15 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .job-card .job-head .job-title-box h6 {
-      margin: 0;
-      width: 75%;
-      height: 25px; }
-      .job-card .job-head .job-title-box h6 small {
-        color: #AAA;
-        font-weight: 100; }
     .job-card .job-head .job-title-box svg {
       width: 25%; }
+    .job-card .job-head .job-title-box h6 {
+      margin: 0;
+      width: 100%;
+      height: 25px; }
+    .job-card .job-head .job-title-box small {
+      color: #AAA;
+      font-weight: 100; }
   .job-card .job-head .job-category p {
     border: 1px solid #000;
     border-radius: 25px;
