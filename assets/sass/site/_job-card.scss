@@ -75,6 +75,15 @@
       }
     }
   }
+  @media(max-width: 450px) {
+    .job-head{
+      flex-wrap: wrap;
+      .job-category{
+        margin: 10px auto;
+      }
+    }
+  }
+
   @media(max-width: 768px) {
     width: 80%;
   }
