@@ -1,11 +1,11 @@
 .job-list {
-  widows: 100%;
-  background-color: #EEE5;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  padding-top: 50px;
+  background-color: #EEE5;
 
   .btn-load-more {
     width: 75%;
