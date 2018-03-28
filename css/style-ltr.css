@@ -7706,6 +7706,7 @@ footer {
   .details-container .details-data {
     margin-bottom: 40px; }
   .details-container .btns .btn-apply {
+    width: 100%;
     padding: 20px 50px;
     color: #FFF;
     background-color: #49b982;
@@ -7715,10 +7716,26 @@ footer {
             box-shadow: 1px 1px 10px #999;
     outline: none; }
   .details-container .btns .btn-save {
+    width: 100%;
     padding: 20px 50px;
     border: 1px solid #000;
     border-radius: 10px;
     background-color: #FFF;
     outline: none; }
+  .details-container .btns .btn-share {
+    width: 100%;
+    padding: 20px 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #FFF;
+    outline: none; }
+  @media (min-width: 768px) {
+    .details-container .btn-save {
+      padding: 20px 15px !important; } }
+  @media (max-width: 375px) {
+    .details-container .btn-apply,
+    .details-container .btn-save,
+    .details-container .btn-share {
+      margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style-ltr.css.map */

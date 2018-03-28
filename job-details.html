@@ -62,20 +62,21 @@
                 </div>
             </div>
     
-            <h6 class="lang">
-                En
-            </h6>
-            <svg
-              role="img"
-              class="svg-arrow"
-              width="15"
-              height="15"
-              fill=""
-              stroke="#FFF"
-            >
-              <use xlink:href="images/icons.svg#icon-arrow-head-down"></use>
-            </svg>
-    
+                <h6 class="lang d-none d-lg-inline">
+                    En
+                </h6>
+                <span class="d-none d-lg-inline">
+                    <svg
+                      role="img"
+                      class="svg-arrow"
+                      width="15"
+                      height="15"
+                      fill=""
+                      stroke="#FFF"
+                    >
+                      <use xlink:href="images/icons.svg#icon-arrow-head-down"></use>
+                    </svg>
+                </span>
         </nav>
     
         <div class="details-header-title">
@@ -160,14 +161,23 @@
                     </div>
         
                     <div class="col-md-9 btns">
-                        <button class="btn btn-apply">APPLY NOW</button>
-                        <button class="btn btn-save">SAVE FOR LATER</button>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <button class="btn btn-apply ">APPLY NOW</button>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <button class="btn btn-save">SAVE FOR LATER</button>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <button class="btn btn-share d-md-none">SHARE THIS JOB</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="sidebar col-md-3">
-            <a class="social-btn social-btn-facebook">
+            <a class="social-btn social-btn-facebook d-none d-md-flex">
                 SHARE ON FACEBOOK
                 <!-- <svg
           role="img"
@@ -182,7 +192,7 @@
          -->
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a class="social-btn social-btn-twitter">
+            <a class="social-btn social-btn-twitter d-none d-md-flex">
                 SHARE ON TWITTER
                 <!-- <svg
           role="img"
@@ -198,7 +208,7 @@
                 <i class="fab fa-twitter"></i>
         
             </a>
-            <a class="social-btn social-btn-linkedin">
+            <a class="social-btn social-btn-linkedin d-none d-md-flex">
                 SHARE ON LINKEDIN
                 <!-- <svg
           role="img"
@@ -213,7 +223,7 @@
          -->
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <div class="job-url">
+            <div class="job-url d-none d-md-block">
                 <h5>Job URL</h5>
                 <div class="input-group job-url-group">
                     <input type="text" class="form-control" value="https://prototype.net/kaw221sa">
