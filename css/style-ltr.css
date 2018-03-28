@@ -7249,7 +7249,12 @@ html,
 body {
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: "Tahoma", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .visually-hidden {
   position: absolute;
@@ -7319,10 +7324,10 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 500px;
+  min-height: 400px;
   color: #CCC;
   background: #000;
-  padding: 50px; }
+  padding: 80px 0; }
   footer .footer-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7345,8 +7350,9 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
@@ -7376,10 +7382,13 @@ footer {
         font-size: 0.7em; }
     @media (max-width: 768px) {
       footer .footer-main .footer-item {
-        display: none; } }
+        display: none; }
+      footer .footer-main .footer-social-item-title {
+        margin: 0 auto; } }
   footer .footer-credit {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 0.8em; }
 
 .job-list {
   display: -webkit-box;
@@ -7469,20 +7478,23 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-  .job-card .job-apply button {
+  .job-card .job-apply a {
     width: 70%;
-    margin: 0 auto;
-    padding: 20px;
-    color: #4DAF7C;
-    background-color: #FFF;
-    border: 1px solid #4DAF7C;
-    outline: none;
-    border-radius: 10px;
-    font-weight: 200;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    .job-card .job-apply button:hover {
-      cursor: pointer; }
+    margin: 0 auto; }
+    .job-card .job-apply a button {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      color: #4DAF7C;
+      background-color: #FFF;
+      border: 1px solid #4DAF7C;
+      outline: none;
+      border-radius: 10px;
+      font-weight: 200;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .job-card .job-apply a button:hover {
+        cursor: pointer; }
   @media (max-width: 450px) {
     .job-card .job-head {
       -ms-flex-wrap: wrap;
@@ -7588,8 +7600,125 @@ footer {
       width: 90%;
       margin-bottom: 30px; } }
 
-html,
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif; }
+.details-header {
+  height: 340px;
+  width: 100%;
+  background-color: #0A4168; }
+  .details-header nav {
+    height: 115px; }
+    .details-header nav .nav-link {
+      color: #FFF !important; }
+  .details-header .details-header-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 55px;
+    color: #FFF; }
+    .details-header .details-header-title .job-type {
+      color: #0A4168;
+      background-color: #FFF;
+      border-radius: 50px;
+      padding: 10px 25px;
+      margin-bottom: 15px; }
+    .details-header .details-header-title h2 {
+      font-weight: 300;
+      font-size: 1.5em; }
+    .details-header .details-header-title small {
+      font-weight: 100; }
+  .details-header nav {
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 2px solid #0d3c5e; }
+    .details-header nav h6 {
+      color: #FFF;
+      margin-right: 10px; }
+  @media (min-width: 991px) {
+    .details-header .navbar-collapse {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.sidebar {
+  padding: 90px 0; }
+  .sidebar .social-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 16px;
+    border-radius: 10px; }
+    .sidebar .social-btn svg {
+      font-size: 1.2em; }
+  .sidebar .social-btn-facebook {
+    text-decoration: none;
+    color: #0A4168 !important;
+    border: 1px solid #0A4168; }
+  .sidebar .social-btn-twitter {
+    text-decoration: none;
+    color: #2aa3ef !important;
+    border: 1px solid #2aa3ef; }
+  .sidebar .social-btn-linkedin {
+    text-decoration: none;
+    color: #1178b3 !important;
+    border: 1px solid #1178b3; }
+  .sidebar .job-url {
+    margin-top: 50px; }
+    .sidebar .job-url input {
+      margin-top: 10px;
+      height: 55px;
+      border: 1px solid #49b982;
+      border-radius: 10px; }
+    .sidebar .job-url .job-url-copy {
+      margin-top: 10px;
+      padding: 10px 15px;
+      color: #FFF;
+      background-color: #49b982;
+      border: 1px solid #49b982;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+
+.details-container {
+  padding: 90px 0; }
+  .details-container .details-title {
+    margin-bottom: 40px; }
+  .details-container .details-data {
+    margin-bottom: 40px; }
+  .details-container .btns .btn-apply {
+    padding: 20px 50px;
+    color: #FFF;
+    background-color: #49b982;
+    margin-right: 35px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 10px #999;
+            box-shadow: 1px 1px 10px #999;
+    outline: none; }
+  .details-container .btns .btn-save {
+    padding: 20px 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #FFF;
+    outline: none; }
 
 /*# sourceMappingURL=style-ltr.css.map */
