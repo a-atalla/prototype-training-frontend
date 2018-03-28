@@ -90,4 +90,5 @@ $RECYCLE.BIN/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
+gh-pages
 gh-pages/*

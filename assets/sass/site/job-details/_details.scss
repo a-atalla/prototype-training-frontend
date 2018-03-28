@@ -1,0 +1,29 @@
+.details-container {
+    padding: 90px 0;
+    .details-title {
+        // font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+    .details-data {
+        margin-bottom: 40px;
+    }
+    .btns {
+        .btn-apply {
+            padding: 20px 50px;
+            color: #FFF;
+            background-color: #49b982;
+            margin-right: 35px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #999;
+            outline: none;
+        }
+        .btn-save {
+            padding: 20px 50px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #FFF;
+            outline: none;
+        }
+    }
+
+}
