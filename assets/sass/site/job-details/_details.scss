@@ -9,6 +9,7 @@
     }
     .btns {
         .btn-apply {
+            width: 100%;
             padding: 20px 50px;
             color: #FFF;
             background-color: #49b982;
@@ -18,11 +19,34 @@
             outline: none;
         }
         .btn-save {
+            width: 100%;
             padding: 20px 50px;
             border: 1px solid #000;
             border-radius: 10px;
             background-color: #FFF;
             outline: none;
+        }
+        .btn-share {
+            width: 100%;
+            padding: 20px 50px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #FFF;
+            outline: none;
+        }
+    }
+
+    @media(min-width: 768px) {
+        .btn-save {
+            padding: 20px 15px !important;
+        }
+    }
+
+    @media(max-width: 375px) {
+        .btn-apply,
+        .btn-save,
+        .btn-share {
+            margin-bottom: 30px;
         }
     }
 
