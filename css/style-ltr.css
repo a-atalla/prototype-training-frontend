@@ -7654,6 +7654,60 @@ footer {
           -ms-flex-align: center;
               align-items: center; } }
 
+.details-header-b {
+  height: 340px;
+  width: 100%;
+  background-color: #2bbbad; }
+  .details-header-b nav {
+    height: 115px; }
+    .details-header-b nav .nav-link {
+      color: #FFF !important; }
+  .details-header-b .details-header-title-b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 55px;
+    color: #FFF; }
+    .details-header-b .details-header-title-b .job-type-b {
+      color: #2bbbad;
+      background-color: #FFF;
+      border-radius: 50px;
+      padding: 10px 25px;
+      margin-bottom: 15px; }
+    .details-header-b .details-header-title-b h2 {
+      font-weight: 300;
+      font-size: 1.5em; }
+    .details-header-b .details-header-title-b small {
+      font-weight: 100; }
+  .details-header-b nav {
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 2px solid #27a79c; }
+    .details-header-b nav h6 {
+      color: #FFF;
+      margin-right: 10px; }
+  @media (min-width: 991px) {
+    .details-header-b .navbar-collapse {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
 .sidebar {
   padding: 90px 0; }
   .sidebar .social-btn {
